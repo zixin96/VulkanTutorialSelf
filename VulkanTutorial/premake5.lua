@@ -33,10 +33,6 @@ project "VulkanTutorial"
 	filter "system:windows"
 		systemversion "latest"
 
-	prebuildcommands {
-		"assets/shaders/compile.bat"
-	}
-
 	filter "configurations:Debug"
 		defines "GLCORE_DEBUG"
 		runtime "Debug"
